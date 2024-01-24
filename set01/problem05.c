@@ -3,7 +3,7 @@ int input()
 {
     int a,b,c;
     printf("ENTER THE NUMBERS TO BE COMAPRED:");
-    scanf("%d%d%d",&a,&b,&c);
+    scanf("%d",&a,&b,&c);
     return a;
 }
 int compare(int a,int b,int c)
