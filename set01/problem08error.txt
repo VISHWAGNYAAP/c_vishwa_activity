@@ -1,0 +1,44 @@
+[{
+	"resource": "/c:/Users/BG/c_vishwa_activity/set01/problem08.c",
+	"owner": "C/C++: IntelliSense",
+	"code": "145",
+	"severity": 8,
+	"message": "variable \"a\" may not be initialized",
+	"source": "C/C++",
+	"startLineNumber": 34,
+	"startColumn": 9,
+	"endLineNumber": 34,
+	"endColumn": 10
+},{
+	"resource": "/c:/Users/BG/c_vishwa_activity/set01/problem08.c",
+	"owner": "C/C++: IntelliSense",
+	"code": "165",
+	"severity": 8,
+	"message": "too few arguments in function call",
+	"source": "C/C++",
+	"startLineNumber": 34,
+	"startColumn": 26,
+	"endLineNumber": 34,
+	"endColumn": 27
+},{
+	"resource": "/c:/Users/BG/c_vishwa_activity/set01/problem08.c",
+	"owner": "C/C++: IntelliSense",
+	"code": "20",
+	"severity": 8,
+	"message": "identifier \"sum\" is undefined",
+	"source": "C/C++",
+	"startLineNumber": 35,
+	"startColumn": 24,
+	"endLineNumber": 35,
+	"endColumn": 27
+},{
+	"resource": "/c:/Users/BG/c_vishwa_activity/set01/problem08.c",
+	"owner": "C/C++: IntelliSense",
+	"code": "165",
+	"severity": 8,
+	"message": "too few arguments in function call",
+	"source": "C/C++",
+	"startLineNumber": 37,
+	"startColumn": 27,
+	"endLineNumber": 37,
+	"endColumn": 28
