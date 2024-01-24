@@ -1,0 +1,30 @@
+PS C:\Users\BG\c_vishwa_activity\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\BG\c_vishwa_activity\set01\a.exe...done.
+(gdb) l
+9           *sum=a+b;
+10      }
+11      void output(int a,int b,int sum)
+12      {
+13          printf("THE SUM OF %d AND %d IS %d",a,b,sum);
+14      }
+15      int main()
+16      {
+17          int a,b,sum;
+18          input(&a,&b);
+(gdb) r
+Starting program: C:\Users\BG\c_vishwa_activity\set01/a.exe 
+[New Thread 5744.0x2894]
+[New Thread 5744.0x1964]
+ENTER THE NUMBERS TO BE ADDED:23
+23
+THE SUM OF 23 AND 23 IS 46[Inferior 1 (process 5744) exited normally]
+(gdb) q
