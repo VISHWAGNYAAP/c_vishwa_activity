@@ -1,0 +1,32 @@
+PS C:\Users\BG\c_vishwa_activity\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.        
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\BG\c_vishwa_activity\set01\a.exe...done.
+(gdb) l
+1       //2. Write a C program to add two numbers.
+2       #include <stdio.h>
+3       int main()
+4       {
+5           int a,b,sum;
+6           printf("ENTER THE FIRST NUMBER TO BE ADDED:",a);
+7           scanf("%d",&a);
+8           printf("ENTER THE SECOND NUMBER TO BE ADDED:",b);
+9           scanf("%d",&b);
+10          sum=a+b;
+(gdb) r
+Starting program: C:\Users\BG\c_vishwa_activity\set01/a.exe 
+[New Thread 13784.0x286c]
+[New Thread 13784.0x3b44]
+ENTER THE FIRST NUMBER TO BE ADDED:23
+ENTER THE SECOND NUMBER TO BE ADDED:23
+THE SUM OF 23 AND 23 IS 46
+q
+[Inferior 1 (process 13784) exited with code 056]
+(gdb) q
