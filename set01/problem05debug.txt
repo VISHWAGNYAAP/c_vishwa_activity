@@ -1,0 +1,31 @@
+PS C:\Users\BG\c_vishwa_activity\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\BG\c_vishwa_activity\set01\a.exe...done.
+(gdb) l
+24          return largest;
+25      }
+26      void output(int a,int b,int c,int largest)
+27      {
+28          printf("THE LARGEST AMONG %d ,%d AND %d IS %d",a,b,c,largest);
+29      }
+30      int main()
+31      {
+32          int num1,num2,num3,largest;
+33          num1=input();
+(gdb) r
+Starting program: C:\Users\BG\c_vishwa_activity\set01/a.exe 
+[New Thread 3840.0x3b74]
+[New Thread 3840.0x3970]
+ENTER THE NUMBERS TO BE COMAPRED:12
+ENTER THE NUMBERS TO BE COMAPRED:34
+ENTER THE NUMBERS TO BE COMAPRED:45
+THE LARGEST AMONG 12 ,34 AND 45 IS 45[Inferior 1 (process 3840) exited normally]
+(gdb) q
