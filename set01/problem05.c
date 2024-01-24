@@ -4,23 +4,24 @@ int input()
     int a,b,c;
     printf("ENTER THE NUMBERS TO BE COMAPRED:");
     scanf("%d%d%d",&a,&b,&c);
-    return 0;
+    return a;
 }
 int compare(int a,int b,int c)
 {
     int largest;
     if((a>=b)&&(a>=c))
     {
-        largest>=a;
+        largest = a;
     }
-    if(b>>c)
+    if(b>=c)
     {
-        largest==b;
+        largest = b;
     }
     else
     {
-        largest>=c;
+        largest = c;
     }
+    return largest;
 }    
 void output(int a,int b,int c,int largest)
 {
@@ -32,7 +33,7 @@ int main()
     num1=input();
     num2=input();
     num3=input();
-    compare(num1,num2,num3);
+    largest=compare(num1,num2,num3);
     output(num1,num2,num3,largest);
     return 0;
 }
