@@ -1,0 +1,48 @@
+PS C:\Users\BG\c_vishwa_activity\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\BG\c_vishwa_activity\set01\a.exe...done.
+(gdb) l
+24          printf("Sum of complex numbers:\n");
+25          printf("First Complex Number: %f + %fi\n", a.real, a.imaginary);
+26          printf("Second Complex Number: %f + %fi\n", b.real, b.imaginary);
+27          printf("Sum: %f + %fi\n", sum.real, sum.imaginary);
+28      }
+29      int main() 
+30      {
+31          Complex num1, num2, sum;
+32
+33          printf("Enter the real part of the first complex number:\n ");
+(gdb) r
+Starting program: C:\Users\BG\c_vishwa_activity\set01/a.exe 
+[New Thread 2788.0x554]
+[New Thread 2788.0x1520]
+Enter the real part of the first complex number:
+ 2
+3
+Enter the imaginary part of the first complex number:
+ 2
+3
+Enter the real part of the second complex number:
+ 2
+4
+Enter the imaginary part of the second complex number:
+ 2
+4
+Sum of complex numbers:
+First Complex Number: 2.000000 + 3.000000i
+Second Complex Number: 2.000000 + 4.000000i
+Sum: 4.000000 + 7.000000i
+Sum of complex numbers:
+First Complex Number: 2.000000 + 3.000000i
+Second Complex Number: 2.000000 + 4.000000i
+Sum: 4.000000 + 7.000000i
+[Inferior 1 (process 2788) exited normally]
+(gdb) q

@@ -28,3 +28,4 @@ ENTER THE NUMBERS TO BE ADDED:23
 ENTER THE NUMBERS TO BE ADDED:23
 THE SUM OF 23 AND 23 IS 46[Inferior 1 (process 12104) exited normally]
 (gdb) q
+
