@@ -1,0 +1,9 @@
+S C:\Users\BG\c_vishwa_activity\set02> gcc problem02.c
+problem02.c: In function 'check_scalane':
+problem02.c:17:5: error: 'isscalane' undeclared (first use in this function)
+     isscalane=1;
+     ^~~~~~~~~
+problem02.c:17:5: note: each undeclared identifier is reported only once for each function it appears in
+problem02.c: In function 'main':
+problem02.c:34:7: warning: implicit declaration of function 'input' [-Wimplicit-function-declaration]
+     a=input();

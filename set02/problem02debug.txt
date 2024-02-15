@@ -13,9 +13,14 @@ Reading symbols from C:\Users\BG\c_vishwa_activity\set02\a.exe...done.
 1       ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S: No such file or directory.
 (gdb) r
 Starting program: C:\Users\BG\c_vishwa_activity\set02/a.exe 
-[New Thread 3416.0x3bf4]
-[New Thread 3416.0x3e24]
-ENTER THE BASE OF THE TRIANGLE(in cms)12
-ENTER THE HEIGHT OF THE TRIANGLE(in cms)23
-THE AREA OF THE TRIANGLE WHOSE BASE IS 12.000000 AND WHOSE HEIGHT IS 23.000000 IS 138.000000 [Inferior 1 (process 3416) exited normally]
+[New Thread 15016.0x20a0]
+[New Thread 15016.0x3e58]
+ENTER THE VALUE OF NUMBER:
+1
+ENTER THE VALUE OF NUMBER:
+1
+ENTER THE VALUE OF NUMBER:
+0
+IT IS NOT A SCALANE TRIANGLE
+[Inferior 1 (process 15016) exited normally]
 (gdb) q
