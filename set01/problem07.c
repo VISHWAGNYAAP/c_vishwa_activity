@@ -3,7 +3,7 @@ int input_n()
 {
     int n;
     printf("ENTER THE VALUE OF N");
-    scanf("%d",&n);
+    scanf("%d",&n); 
     return n;
 }
 int sum_n_nos(int n)
