@@ -13,12 +13,11 @@ if(n<=1)
 {
    return result;
 }
-for (int i=2;) i = 0; i < count; i++)
+for (int i=2; i < n; i < count; i++)
 {
-    /* code */
+   count++;
 }
 
-else if
 {
     result == 0;
 }

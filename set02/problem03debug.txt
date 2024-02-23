@@ -1,0 +1,32 @@
+PS C:\Users\BG\c_vishwa_activity\set02> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\BG\c_vishwa_activity\set02\a.exe...done.
+(gdb) l
+11              *area=0.5*base*height;
+12          }
+13          void output(float base,float height,float area)
+14          {
+15              printf("THE AREA OF THE TRIANGLE WHOSE BASE IS %f AND WHOSE HEIGHT IS %f IS %f ",base,height,area);
+16          }
+17          int main()
+18          {
+19              float base,height,area;
+20              input(&base,&height);
+(gdb) r
+Starting program: C:\Users\BG\c_vishwa_activity\set02/a.exe 
+[New Thread 11180.0x3054]
+[New Thread 11180.0x23f4]
+ENTER THE BASE OF THE TRIANGLE(in cms)12
+ENTER THE HEIGHT OF THE TRIANGLE(in cms)12
+THE AREA OF THE TRIANGLE WHOSE BASE IS 12.000000 AND WHOSE HEIGHT IS 12.000000 IS 72.000000 [Inferior 1 (process 11180) exited normally]
+(gdb) .
+Undefined command: "".  Try "help".
+(gdb) q
