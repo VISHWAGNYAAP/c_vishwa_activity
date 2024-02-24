@@ -8,6 +8,7 @@ int input_number()
 }
 int is_composite(int n)
 {
+    int count;
     int result=0;
 if(n<=1)
 {
@@ -37,9 +38,9 @@ void output(int n,int result)
 }
 int main()
 {
-    int n;
+    int n,output;
     n=input();
     is_composite(n);
     output=is_Composite(n);
-    return 0;
+    return output;
 }
