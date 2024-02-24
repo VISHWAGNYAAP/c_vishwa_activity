@@ -14,14 +14,11 @@ if(n<=1)
 {
    return result;
 }
-for (int i=2; i < n; i < count; i++)
+for (int i=2; i < n; i < count)
 {
    count++;
 }
-
-{
     result == 0;
-}
 }
 void output(int n,int result)
 {

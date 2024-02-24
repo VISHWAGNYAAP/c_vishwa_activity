@@ -15,4 +15,15 @@ problem03.c:43:12: warning: implicit declaration of function 'is_Composite' [-Wi
             ^~~~~~~~~~~~
 problem03.c:43:11: error: lvalue required as left operand of assignment
      output=is_Composite(n);
-           ^
+           ^PS C:\Users\BG\c_vishwa_activity\set02> gcc problem03.c -O0 -g
+problem03.c: In function 'is_composite':
+problem03.c:17:31: error: expected ')' before ';' token
+ for (int i=2; i < n; i < count; i++)
+                               ^
+problem03.c: In function 'main':
+problem03.c:42:7: warning: implicit declaration of function 'input' [-Wimplicit-function-declaration]
+     n=input();
+       ^~~~~
+problem03.c:44:12: warning: implicit declaration of function 'is_Composite' [-Wimplicit-function-declaration]
+     output=is_Composite(n);
+            ^~~~~~~~~~~~
