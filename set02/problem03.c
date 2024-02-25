@@ -36,8 +36,8 @@ void output(int n,int result)
 int main()
 {
     int n,output;
-    n=input();
-    is_composite(n);
-    output=is_Composite(n);
-    return output;
+    n=input_number();
+    output = is_composite(n);
+    output=is_Composite(n,output);
+    return 0;
 }
