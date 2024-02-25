@@ -9,7 +9,8 @@ int input_number()
 }
 int is_composite(int n)
 {
-    if (n <= 1) {
+    if (n <= 1) 
+    {
         return 0; 
     }
     for (int i = 2; i <= sqrt(n); i++) 
@@ -23,16 +24,15 @@ int is_composite(int n)
 }
 void output(int n,int result)
 {
-    if(result == 1)
+    if(is_composite(n))
     {
-        printf("THE NUMBER NOT COMPOSITE\n");
-        scanf("%d",&n);
+        printf("THE NUMBER IS COMPOSITE\n");
     }
-    if(result == 0)
+    else
     {
         printf("THE NUMBER IS NOT COMPOSITE\n");
-        scanf("%d",&n);
     }
+    return 0;
 }
 int main()
 {
