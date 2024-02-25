@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 int input_number()
 {
     int n;
@@ -13,14 +12,15 @@ int is_composite(int n)
     {
         return 0; 
     }
-    for (int i = 2; i <= sqrt(n); i++) 
+    int count = 0;
+    for(int i=1;i<=n;i++)
     {
-        if (n % i == 0) 
-        {
-            return 1; 
-        }
+    if(n%i == 0)
+    {
+    count ++;
     }
-    return 0;
+}
+return count > 2;
 }
 void output(int n,int result)
 {
@@ -32,7 +32,6 @@ void output(int n,int result)
     {
         printf("THE NUMBER IS NOT COMPOSITE\n");
     }
-    return 0;
 }
 int main()
 {
