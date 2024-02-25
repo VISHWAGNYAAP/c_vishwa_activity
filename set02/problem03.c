@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 int input_number()
 {
     int n;
@@ -8,17 +9,17 @@ int input_number()
 }
 int is_composite(int n)
 {
-    int count;
-    int result=0;
-if(n<=1)
-{
-   return result;
-}
-for (int i=2; i < n; i < count)
-{
-   count++;
-}
-    result == 0;
+    if (n <= 1) {
+        return 0; 
+    }
+    for (int i = 2; i <= sqrt(n); i++) 
+    {
+        if (n % i == 0) 
+        {
+            return 1; 
+        }
+    }
+    return 0;
 }
 void output(int n,int result)
 {
