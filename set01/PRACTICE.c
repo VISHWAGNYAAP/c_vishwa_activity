@@ -9,7 +9,8 @@ int input()
 }
 int add(int a,int b)
 {
-    return a+b;
+    int sum =0;
+    return sum;
 }
 void output(int a,int b ,int sum)
 {
