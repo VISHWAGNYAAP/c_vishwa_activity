@@ -1,11 +1,10 @@
 #include <stdio.h>
 int input()
 {
-    int a,b;
-    printf("ENTER THE VALUE OF FIRST NUMBER TO BE ADDED:");
+    int a;
+    printf("ENTER THE VALUE OF NUMBERS TO BE ADDED:");
     scanf("%d",&a);
-    printf("ENTER THE VALUE OF THE SECOND NUMBER TO BE ADDED:");
-    scanf("%d",&b);
+    return a;
 }
 int add(int a,int b)
 {
