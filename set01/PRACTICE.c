@@ -6,20 +6,19 @@ int input(int *a,int *b ,int *c)
     return a;
 
 }
-int compare(int a,int b,int c)
+int compare(int a,int b,int c,int *largest)
 {
-int largest;
 if((a>=b)&&(a>=c))
 {
-    largest == a;
+    *largest == a;
 }
 if(b>=c)
 {
-    largest == b;
+    *largest == b;
 }
 else 
 {
-    largest == c;
+    *largest == c;
 }
 return largest;
 }
@@ -30,10 +29,8 @@ void output(int a,int b,int c,int largest)
 int main()
 {
     int num1,num2,num3,largest;
-    num1 = input();
-    num2 = input();
-    num3 = input();
-    largest=compare(num1,num2,num3);
+    input(&num1,num2,&num3);
+    largest=compare(num1,num2,num3,&largest);
     output(num1,num2,num3,largest);
     return 0; 
 }
