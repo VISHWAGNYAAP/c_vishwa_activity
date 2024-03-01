@@ -226,7 +226,7 @@ void output(Complex a, Complex b, Complex sum);
 ```
 
 ***Input***
-```
+```	
 2 3
 4 5
 ```

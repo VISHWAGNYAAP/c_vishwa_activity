@@ -1,33 +1,27 @@
 #include <stdio.h>
-void input(int *a,int *b ,int *c)
+int input()
 {
-    printf("ENTER THE NUMBERS TO BE COMPARED:");
-    scanf("%d%d%d",a,b,c);
+    printf("ENTER THE VALUE OF N");
+    scanf("%d",&n);
+    return n;
 }
-void compare(int a,int b,int c,int *largest)
+int sum_n_nos(int n)
 {
-if(a>=b&&a>=c)
-{
-    *largest == a;
+   int result=0;
+   for(int i=0 ;i<=n ; i++)
+   {
+    result += 1;
+   }
+   return result;
 }
-else if(b>=c)
+void output(int n,int sum)
 {
-    *largest == b;
-}
-else 
-{
-    *largest == c;
-}
-}
-void output(int a,int b,int c,int largest)
-{
-    printf("THE LARGEST AMONG THE NUMBERS %d,%d,%d IS %d",a,b,c,largest);
+    printf("THE SUM FROM 1 TO %d IS %d");
 }
 int main()
 {
-    int num1,num2,num3,largest;
-    input(&num1,&num2,&num3);
-    compare(num1,num2,num3,&largest);
-    output(num1,num2,num3,largest);
-    return 0; 
+    int n = input();
+    int total = sum_n_nos(n);
+    output(n,total);
+    return 0;
 }
