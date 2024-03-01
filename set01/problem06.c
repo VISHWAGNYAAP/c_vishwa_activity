@@ -4,7 +4,7 @@ void input(int *a, int *b, int *c)
     printf("ENTER THE NUMBERS TO BE COMPARED:");
     scanf("%d%d%d", a, b, c);
 }
-void compare(int a, int b, int c, int *largest)
+void compare(int a, int b, int c, int *largest) 
 {
     if (a >= b && a >= c)
     {

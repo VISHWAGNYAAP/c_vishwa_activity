@@ -1,10 +1,8 @@
 #include <stdio.h>
 int input(int *a,int *b ,int *c)
 {
-    printf("ENTER THE FIRST NUMBER TO BE COMPARED:");
-    scanf("%d",&a,&b,&c);
-    return a;
-
+    printf("ENTER THE NUMBERS TO BE COMPARED:");
+    scanf("%d%d%d",a,b,c);
 }
 int compare(int a,int b,int c,int *largest)
 {
