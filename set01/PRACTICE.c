@@ -1,16 +1,16 @@
 #include <stdio.h>
-int input(int *a,int *b ,int *c)
+void input(int *a,int *b ,int *c)
 {
     printf("ENTER THE NUMBERS TO BE COMPARED:");
     scanf("%d%d%d",a,b,c);
 }
-int compare(int a,int b,int c,int *largest)
+void compare(int a,int b,int c,int *largest)
 {
-if((a>=b)&&(a>=c))
+if(a>=b&&a>=c)
 {
     *largest == a;
 }
-if(b>=c)
+else if(b>=c)
 {
     *largest == b;
 }
@@ -18,7 +18,6 @@ else
 {
     *largest == c;
 }
-return largest;
 }
 void output(int a,int b,int c,int largest)
 {
@@ -27,8 +26,8 @@ void output(int a,int b,int c,int largest)
 int main()
 {
     int num1,num2,num3,largest;
-    input(&num1,num2,&num3);
-    largest=compare(num1,num2,num3,&largest);
+    input(&num1,&num2,&num3);
+    compare(num1,num2,num3,&largest);
     output(num1,num2,num3,largest);
     return 0; 
 }
